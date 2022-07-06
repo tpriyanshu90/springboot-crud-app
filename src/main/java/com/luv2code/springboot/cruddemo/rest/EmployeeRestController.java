@@ -21,6 +21,12 @@ public class EmployeeRestController {
 		employeeDAO = theEmployeeDAO;
 	}
 	
+	// expose "/" and greet
+	@GetMapping("")
+	public String greetAll() {
+		return "Hey! Welcome, have a great day";
+	}
+	
 	// expose "/employees" and return list of employees
 	@GetMapping("/employees")
 	public List<Employee> findAll() {
