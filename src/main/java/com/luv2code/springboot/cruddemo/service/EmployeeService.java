@@ -1,13 +1,11 @@
-package com.luv2code.springboot.cruddemo.dao;
+package com.luv2code.springboot.cruddemo.service;
 
 import java.util.List;
 
-import org.springframework.stereotype.Repository;
-
 import com.luv2code.springboot.cruddemo.entity.Employee;
 
-public interface EmployeeDAO {
-
+public interface EmployeeService {
+	
 	public List<Employee> findAll();
 	
 	public Employee findById(int theId);
