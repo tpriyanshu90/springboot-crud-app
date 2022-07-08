@@ -17,13 +17,13 @@ import com.luv2code.springboot.cruddemo.entity.Employee;
 import com.luv2code.springboot.cruddemo.service.EmployeeService;
 
 @RestController
-@RequestMapping("/api")
-public class EmployeeRestController {
+@RequestMapping("/api/springdatajpa")
+public class EmployeeRestControllerSpringDataJPA {
 
 	private EmployeeService employeeService;
 	
 	@Autowired
-	public EmployeeRestController(@Qualifier("employeeServiceImpl") EmployeeService theEmployeeService) {
+	public EmployeeRestControllerSpringDataJPA(@Qualifier("employeeServiceImplSpringDataJPA") EmployeeService theEmployeeService) {
 		employeeService = theEmployeeService;
 	}
 	
